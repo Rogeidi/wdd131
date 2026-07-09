@@ -1,14 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 – Fundamentos da Web Dinâmica - Rogeidi Vela</title>
+    <meta name="description" content="WDD 131 – Fundamentos da Web Dinâmica - Rogeidi Vela - Pagina inicial do curso">
+    <meta name="author" content="Rogeidi Vela">
+    <link rel="stylesheet" href="estilos/base.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/obterdatas.js" defer></script>
 </head>
 <body>
-    <h1>Rogeidi Vela</h1>
-    <p>Welcome to my website!</p>
-    <h2>About Me</h2>
-    <p>I am a web developer with a passion for creating interactive and user-friendly websites. I enjoy learning new technologies and improving my skills.</p>
+    <header>
+        <h1 class="title">WDD 131 – Fundamentos da Web Dinâmica - Rogeidi Vela</h1>
+        <nav class="container">
+        <a href="https://www.linkedin.com/in/rogeidi-r-vela-de-sierra-280049397" target="_blank">LinKedIn</a>
+        <a href="https://byupw.instructure.com/">Canvas</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=por">Escritura</a>
+        <a href="#">Projeto Final</a>
+        </nav>
+
+    </header>
+    <main>
+        <h1>Rogeidi R. Vela</h1>
+        <div class="main-content">
+            <section class="card-left">
+                <h2>Sobre Mim</h2>
+                <div class="profile-block">
+                    <p>Olá, meu nome é Rogeidi Vela e sou da Venezuela. Estou morando no Brasil há três anos com minha família, que é composta por meu esposo, meu filho e minha filha. Sempre tive interesse em estudar programação e agora comecei com esta grande oportunidade de estudar na BYU em português. Espero aprender muito e poder encontrar um emprego com as habilidades aprendidas. Gosto muito de passar tempo com a minha família e praticar esportes.</p>
+                    <img src="imagens/perfil.jpg" alt="Olá! meu nome é Rogeidi Vela">
+                </div>
+                <h3>Americana SP</h3>
+                <div class="flag-block">
+                    <div class="flag-image-box">
+                        <img src="imagens/bandera-americana-sp.jpg" alt="Americana SP">
+                        <p class="bandeira-caption">Bandeira Oficial de Americana sp</p>
+                    </div>
+                    <p>Americana é um município brasileiro localizado no interior do estado de São Paulo, integrante da Região Metropolitana de Campinas. Fica a cerca de 126 quilômetros da capital paulista e destaca-se por sua alta qualidade de vida e forte desenvolvimento econômico.</p>
+                </div>          
+            </section>
+            <section class="card-right">
+                <h2>pontos Turísticos</h2>
+                <ul>
+                    <li>Parque Ecológico Municipal (Cidinha Ravera): Um dos zoológicos mais importantes e visitados do interior paulista, excelente para famílias.</li>
+                    <li>Jardim Botânico Municipal: Espaço ideal para caminhadas, que abriga também o Orquidário Municipal e uma grande variedade de árvores nativas.</li>
+                    <li>Parque Aimaratá: Focado em turismo rural, oferece pesca esportiva, trilhas ecológicas e atividades em contato com a natureza.</li>
+                    <li>Praia dos Namorados: Área às margens da Represa de Salto Grande, muito procurada para caminhadas e para assistir ao pôr do sol.</li>
+                    <li>Basílica Santo Antônio de Pádua: Uma igreja monumental em estilo neoclássico, que possui uma das maiores cúpulas pintadas à mão do país.</li>
+                    <li>Casarão do Salto Grande (Museu Histórico): Antiga sede de fazenda do século XIX que preserva a história da fundação da cidade e do período colonial.</li>
+                    <li>Observatório Astronômico Municipal (OMA): Ótimo local para visitas noturnas agendadas, focado na observação de astros e divulgação científica.</li>
+                </ul>
+            </section>
+        </div>     
+    </main>
+    <footer>
+        <p>&copy; <span id="anoatual"></span> | Rogeidi R. Vela | Americana SP</p>
+        <p id="ultimaModificacao"> </p>
+
+    </footer>
 </body>
 </html>
