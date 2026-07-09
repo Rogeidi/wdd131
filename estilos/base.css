@@ -5,6 +5,17 @@
     font-family: Arial, sans-serif;
 }
 
+header {
+    width: 100%;
+    background-color: #4856c3;
+}
+
+main {
+    width: 100%;
+    background-color: #f4f4f4;
+    padding-bottom: 40px;
+}
+
 body {
     background-color: #f4f4f4;
 
@@ -52,7 +63,7 @@ main h1 {
     padding: 0 20px 40px 20px;
 }
 
-.card-left {
+.card.left {
     flex: 2.5;
     background-color: white;
     border: 1px solid #b4b4b4;
@@ -61,7 +72,7 @@ main h1 {
     padding-bottom: 20px;
 }
 
-.card-right {
+.card.right {
     flex: 1.5;
     background-color: white;
     border: 1px solid #b4b4b4;
@@ -70,7 +81,7 @@ main h1 {
     padding-bottom: 20px;
 }
 
-.card-left h2, .card-right h2 {
+.card h2 {
     background-color: #030d53;
     color: white;
     text-align: center;
@@ -92,7 +103,7 @@ main h1 {
     border-radius: 4px;
 }
 
-.card-left h3 {
+.card.left h3 {
     text-align: center;
     margin: 25px 0 15px 0;
     font-size: 1.3rem;
@@ -101,10 +112,11 @@ main h1 {
 }
 
 .flag-block {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     gap: 20px;
     padding: 0 20px;
-    align-items: flex-start;
+    align-items: start;
 }
 
 .flag-image-box {
@@ -124,12 +136,12 @@ main h1 {
     margin-top: 5px;
 }
 
-.card-right ul {
+.card.right ul {
     padding: 0 25px;
     list-style-type: disc;
 }
 
-.card-right li {
+.card.right li {
     margin-bottom: 12px;
     line-height: 1.4;
     color: #333;
