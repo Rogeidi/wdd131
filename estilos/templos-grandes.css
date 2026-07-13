@@ -1,0 +1,29 @@
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 20px 40px;
+    }
+
+    header h1 {
+        margin-bottom: 0;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+    }
+
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        max-width: 1024px;
+    }
+
+    #menu-button {
+        display: none;
+    }
+}
