@@ -23,7 +23,10 @@ body {
 header {
     background-color: var(--azul-escuro);
     color: var(--branco);
-    padding: 15px;
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     text-align: center;
 }
 
@@ -33,24 +36,31 @@ header {
     font-weight: 700;
 }
 
-.container {
+header .container {
     display: none;
     width: 100%;
-    flex-direction: column;
+    text-align: center;
+    padding-top: 15px;
 }
 
-.container.show {
-    display: flex;
+header .container.show {
+    display: block;
 }
-.container a {
+header .container nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+header .container a {
     color: var(--branco);
     text-decoration: none;
-    font-size: 0.95rem;
-    padding: 4px 8px;
+    font-size: 1.1rem;
+    padding: 6px 0;
     transition: color 0.3s ease;
 }
 
-.container a:hover {
+header .container nav a:hover {
     color: #a4c2f4;
     text-decoration: underline;
 }
@@ -109,6 +119,7 @@ main figcaption {
     font-size: 2rem;
     cursor: pointer;
     padding: 5px 10px;
+    display: block;
 }
 
 footer {

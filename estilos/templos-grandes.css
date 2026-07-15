@@ -5,16 +5,26 @@
         align-items: center;
         text-align: left;
         padding: 20px 40px;
+        position: relative;
     }
 
     .title {
         margin-bottom: 0;
     }
 
-    .container {
+    header .container {
+        display: block;
+        margin: 0 auto;
+    }
+
+    header .container nav {
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
         width: auto;
+        
     }
 
     main {
