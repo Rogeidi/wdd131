@@ -27,23 +27,22 @@ header {
     text-align: center;
 }
 
-header h1 {
+.title {
     font-size: 1.6rem;
     margin-bottom: 10px;
     font-weight: 700;
 }
 
-header nav {
+.container {
     display: none;
     width: 100%;
     flex-direction: column;
 }
 
-header nav.show {
+.container.show {
     display: flex;
 }
-
-header nav a {
+.container a {
     color: var(--branco);
     text-decoration: none;
     font-size: 0.95rem;
@@ -51,7 +50,7 @@ header nav a {
     transition: color 0.3s ease;
 }
 
-header nav a:hover {
+.container a:hover {
     color: #a4c2f4;
     text-decoration: underline;
 }
@@ -76,7 +75,7 @@ main h1 {
 main figure {
     background-color: var(--branco);
     border-radius: 6px;
-    box-shadow: 0 2px 5px rgba (0, 0, 0, 0.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -104,10 +103,14 @@ main figcaption {
 }
 
 #menu-button {
-    background-color: none;
+    background-color: transparent;
     border: none;
     color: var(--branco);
     font-size: 2rem;
     cursor: pointer;
     padding: 5px 10px;
+}
+
+footer {
+    text-align: center;
 }
