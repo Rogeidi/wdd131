@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do país</title>
+        <meta name="description" content="WDD 131 – Fundamentos da Web Dinâmica - Rogeidi Vela- Página sobre Brasil y sus animales.">
+    <meta name="author" content="Rogeidi Vela">
+    <link rel="stylesheet" href="estilos/local.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/local.js" defer></script>
+</head>
+<body>
+    <header>
+       <h1>Brasil</h1> 
+    </header>
+    <main>
+        <picture class="cristo">
+            <source srcset="imagens/cristo-redentor-grande.webp" media="(min-width: 1024px)">
+            <img src="imagens/cristo-redentor-pequeno.webp" alt="Estátua do Cristo Redentor no Rio de Janeiro" loading="lazy">
+        </picture>
+        <div class="cristo-dados">
+            <h2>Dados</h2>
+            <ul>
+                <li>Área: 8.510.346 km²</li>
+                <li>Capital: Brasília</li>
+                <li>Idioma: Português</li>
+                <li>Moeda: Real</li>
+                <li>Fusos horários: Possui 4 fusos, variando de UTC-2 a UTC-5. O horário oficial é o de Brasília (UTC-3).</li>
+                <li>Código de DDI: +55.</li>
+                <li>Domínio de Internet  (TLD): .br.</li>
+            </ul>    
+        </div>
+        <div class="Clima">
+            <h2>Clima <img src="imagens/icono-sol.svg" alt="Ícone do clima" class="clima-icone-movel"></h2>
+            <ul>
+                <li>Sensação Térmica: <span id="wind-chill"></span></li>
+                <li>Temperatura média: Varia entre 22°C e 26°C na maior parte do país</li>
+                <li>Condição climática: O clima predominante é o tropical</li>
+                <li>Ventos: 7 km/h e 14 km/h</li>
+                <li>Estações invertidas: Por estar majoritariamente no Hemisfério Sul, o inverno brasileiro ocorre entre junho e setembro, e o verão acontece entre dezembro e março.</li>
+            </ul>
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span>🌻 Rogeidi R. Vela 🌻 Americana SP</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>

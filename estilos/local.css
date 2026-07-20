@@ -1,0 +1,125 @@
+:root {
+    --cor-primaria: #009c3b; /*Verde*/
+    --cor-secundaria: #ffdf00; /*Amarelo*/
+    --cor-destaque: #002776; /*Azul*/
+    --cor-texto: #333333; /*Cinza*/
+    --fundo-claro: #f4f4f4; /*Fundo dos blocos*/
+    --branco: #ffffff; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto' , sans-serif;
+    color: var(--cor-texto);
+    background-color: var(--branco);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--cor-primaria);
+    color: var(--branco);
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom: 5px solid var(--cor-secundaria);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+footer {
+    background-color: var(--cor-destaque);
+    color: var(--branco);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.cristo-dados, .Clima {
+    background-color: var(--fundo-claro);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid var(--cor-primaria);
+    box-shadow: 0 2px 5px rgba(0,0,0,0,1);
+}
+
+main h2 {
+    color: var(--cor-destaque);
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+
+}
+
+.clima-icone-movel {
+    width: 40px;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+@media (min-width: 1024px) {
+    main {
+        display: grid;
+        grid-template-columns: 1.2 fr 1fr;
+        gap: 1.5rem;
+        padding: 2rem 1rem;
+    }
+
+    .cristo {
+        grid-column: span 2;
+
+    }
+
+    .cristo img {
+        height: 100%;
+        max-height: 580px;
+        object-fit: cover;
+    }
+
+    .clima-icone-movel {
+        display: none;
+    }
+
+    .Clima h2::after {
+        content: "⛅";
+        font-size: 1.6rem;
+    }
+
+    
+}
